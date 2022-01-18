@@ -32,12 +32,12 @@ Presentation
 
         Image {
             id: background
-            source: "squid.png"
-            width: 200; height: 200
+            source: "AquriOSlide1.png"
+            width: 400; height: 400
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
-        Text {
+        /*Text {
             anchors.horizontalCenter: background.horizontalCenter
             anchors.top: background.bottom
             text: "This is a customizable QML slideshow.<br/>"+
@@ -48,15 +48,27 @@ Presentation
             wrapMode: Text.WordWrap
             width: presentation.width
             horizontalAlignment: Text.Center
+        }*/
+    }
+
+    Slide {
+        Image {
+            id: background
+            source: "AquriOSlide2.png"
+            width: 400; height: 400
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
         }
     }
 
     Slide {
-        centeredText: qsTr("This is a second Slide element.")
-    }
-
-    Slide {
-        centeredText: qsTr("This is a third Slide element.")
+        Image {
+            id: background
+            source: "AquriOSlide3.png"
+            width: 400; height: 400
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
     }
 
     // When this slideshow is loaded as a V1 slideshow, only
