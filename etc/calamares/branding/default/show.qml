@@ -31,7 +31,7 @@ Presentation
     Slide {
 
         Image {
-            id: background
+            id: background1
             source: "AquriOSlide1.png"
             width: 200; height: 200
             fillMode: Image.PreserveAspectFit
@@ -41,7 +41,7 @@ Presentation
 
     Slide {
         Image {
-            id: background
+            id: background2
             source: "AquriOSlide2.png"
             width: 200; height: 200
             fillMode: Image.PreserveAspectFit
@@ -51,7 +51,7 @@ Presentation
 
     Slide {
         Image {
-            id: background
+            id: background3
             source: "AquriOSlide3.png"
             width: 200; height: 200
             fillMode: Image.PreserveAspectFit
