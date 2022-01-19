@@ -22,7 +22,7 @@ Presentation
 
     Timer {
         id: advanceTimer
-        interval: 1000
+        interval: 4000
         running: presentation.activatedInCalamares
         repeat: true
         onTriggered: nextSlide()
@@ -33,18 +33,14 @@ Presentation
         Image {
             id: background
             source: "AquriOSlide1.png"
-            width: 200; height: 200
+            width: 400; height: 400
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
         Text {
             anchors.horizontalCenter: background.horizontalCenter
             anchors.top: background.bottom
-            text: "This is a customizable QML slideshow.<br/>"+
-                  "Distributions should provide their own slideshow and list it in <br/>"+
-                  "their custom branding.desc file.<br/>"+
-                  "To create a Calamares presentation in QML, import calamares.slideshow,<br/>"+
-                  "define a Presentation element with as many Slide elements as needed."
+            text: "AquariOS"
             wrapMode: Text.WordWrap
             width: presentation.width
             horizontalAlignment: Text.Center
