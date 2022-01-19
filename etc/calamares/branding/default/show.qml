@@ -50,38 +50,21 @@ Presentation
     Slide {
 
         Image {
-            id: background
+            id: background2
             source: "AquriOSlide2.png"
             width: 600; height: 600
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
         Text {
-            anchors.horizontalCenter: background.horizontalCenter
-            anchors.top: background.bottom
+            anchors.horizontalCenter: background2.horizontalCenter
+            anchors.top: background2.bottom
             text: "AquariOS"
             wrapMode: Text.WordWrap
             width: presentation.width
             horizontalAlignment: Text.Center
-        }    }
-
-    Slide {
-
-        Image {
-            id: background
-            source: "AquriOSlide3.png"
-            width: 600; height: 600
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
         }
-        Text {
-            anchors.horizontalCenter: background.horizontalCenter
-            anchors.top: background.bottom
-            text: "AquariOS"
-            wrapMode: Text.WordWrap
-            width: presentation.width
-            horizontalAlignment: Text.Center
-        }    }
+    }
 
     // When this slideshow is loaded as a V1 slideshow, only
     // activatedInCalamares is set, which starts the timer (see above).
