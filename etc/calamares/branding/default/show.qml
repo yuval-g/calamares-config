@@ -22,7 +22,7 @@ Presentation
 
     Timer {
         id: advanceTimer
-        interval: 4000
+        interval: 1000
         running: presentation.activatedInCalamares
         repeat: true
         onTriggered: nextSlide()
@@ -31,32 +31,32 @@ Presentation
     Slide {
 
         Image {
-            id: background1
+            id: background
             source: "AquriOSlide1.png"
             width: 200; height: 200
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
-    }
-
-    Slide {
-        Image {
-            id: background2
-            source: "AquriOSlide2.png"
-            width: 200; height: 200
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
+        Text {
+            anchors.horizontalCenter: background.horizontalCenter
+            anchors.top: background.bottom
+            text: "This is a customizable QML slideshow.<br/>"+
+                  "Distributions should provide their own slideshow and list it in <br/>"+
+                  "their custom branding.desc file.<br/>"+
+                  "To create a Calamares presentation in QML, import calamares.slideshow,<br/>"+
+                  "define a Presentation element with as many Slide elements as needed."
+            wrapMode: Text.WordWrap
+            width: presentation.width
+            horizontalAlignment: Text.Center
         }
     }
 
     Slide {
-        Image {
-            id: background3
-            source: "AquriOSlide3.png"
-            width: 200; height: 200
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
+        centeredText: qsTr("This is a second Slide element.")
+    }
+
+    Slide {
+        centeredText: qsTr("This is a third Slide element.")
     }
 
     // When this slideshow is loaded as a V1 slideshow, only
